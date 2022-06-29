@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Indexed\LaravelAdminPreset\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelAdminPresetCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-admin-preset';
 
     public $description = 'My command';
 
