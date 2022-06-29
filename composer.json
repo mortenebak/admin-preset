@@ -1,17 +1,19 @@
 {
     "name": "mortenebak/laravel-admin-preset",
-    "description": "Laravel TALL stack admin preset",
+    "description": "Laravel TALL Stack Admin Preset",
     "keywords": [
         "mortenebak",
         "laravel",
-        "laravel-admin-preset"
+        "laravel-admin-preset",
+        "tall",
+        "admin-preset"
     ],
     "homepage": "https://github.com/mortenebak/laravel-admin-preset",
     "license": "MIT",
     "authors": [
         {
             "name": "Morten Bak",
-            "email": "meb@indexed.dk",
+            "email": "hej@netbums.dk",
             "role": "Developer"
         }
     ],
@@ -38,13 +40,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Indexed\\LaravelAdminPreset\\": "src",
-            "Indexed\\LaravelAdminPreset\\Database\\Factories\\": "database/factories"
+            "Netbums\\LaravelAdminPreset\\": "src",
+            "Netbums\\LaravelAdminPreset\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Indexed\\LaravelAdminPreset\\Tests\\": "tests"
+            "Netbums\\LaravelAdminPreset\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -62,10 +64,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Indexed\\LaravelAdminPreset\\LaravelAdminPresetServiceProvider"
+                "Netbums\\LaravelAdminPreset\\LaravelAdminPresetServiceProvider"
             ],
             "aliases": {
-                "LaravelAdminPreset": "Indexed\\LaravelAdminPreset\\Facades\\LaravelAdminPreset"
+                "LaravelAdminPreset": "Netbums\\LaravelAdminPreset\\Facades\\LaravelAdminPreset"
             }
         }
     },
