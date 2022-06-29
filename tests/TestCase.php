@@ -3,8 +3,8 @@
 namespace Indexed\LaravelAdminPreset\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Indexed\LaravelAdminPreset\LaravelAdminPresetServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {

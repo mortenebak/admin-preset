@@ -2,11 +2,11 @@
 
 namespace Indexed\LaravelAdminPreset;
 
-use Spatie\LaravelPackageTools\Package;
-use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Illuminate\Pagination\Paginator;
 use Indexed\LaravelAdminPreset\Commands\LaravelAdminPresetCommand;
 use Laravel\Ui\UiCommand;
-use Illuminate\Pagination\Paginator;
+use Spatie\LaravelPackageTools\Package;
+use Spatie\LaravelPackageTools\PackageServiceProvider;
 
 class LaravelAdminPresetServiceProvider extends PackageServiceProvider
 {
@@ -38,7 +38,6 @@ class LaravelAdminPresetServiceProvider extends PackageServiceProvider
             $command->info('TALL preset scaffolding installed successfully.');
 
             $command->comment('Please run "npm install && npm run dev" to compile your new assets.');
-
         });
 
         Paginator::defaultView('pagination::default');

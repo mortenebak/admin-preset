@@ -44,7 +44,6 @@ class LaravelAdminPreset extends Preset
         static::updateFile(base_path('app/Http/Middleware/RedirectIfAuthenticated.php'), function ($file) {
             return str_replace("RouteServiceProvider::HOME", "route('home')", $file);
         });
-
     }
 
     protected static function updatePackageArray(array $packages): array
